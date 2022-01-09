@@ -83,3 +83,36 @@ nav {
 .banner-logo img{
     width: 90%;
 }
+
+/* Main Section start */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+/* Top players section start */
+.top-players{
+    
+    width: 950px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 5px 5px 40px rgba(128, 128, 128, 0.274);
+}
+.player img{
+    width: 100%;
+}
+.player h2{
+  font-weight: bolder;
+}
+
+
+
+/* Top players section end */
+/* Main Section end */
