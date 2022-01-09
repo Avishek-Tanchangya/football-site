@@ -109,7 +109,7 @@ main {
 
 /* Highlights section start */
 .highlights {
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 20px;
   width: 950px;
   display: flex;
@@ -141,3 +141,35 @@ main {
 /* Highlights section end */
 
 /* Main Section end */
+
+
+/* Footer section start */
+footer{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img{
+  width: 40%;
+}
+
+footer .social-icons div{
+  background-color: gray;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+footer .social-icons #instagram{
+  padding: 5px 11px;
+}
+footer .social-icons #facebook{
+  padding: 5px 13px;
+}
+footer .social-icons #twitter{
+  padding: 5px 10px;
+}
+footer .social-icons #youtube{
+  padding: 5px 9px;
+}
+/* Footer section end */
