@@ -155,9 +155,14 @@ footer img{
 }
 
 footer .social-icons div{
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.205);
   display: inline-block;
   border-radius: 100%;
+  margin-right: 10px;
+}
+
+.social-icons a{
+  color: gray;
 }
 
 footer .social-icons #instagram{
@@ -171,5 +176,6 @@ footer .social-icons #twitter{
 }
 footer .social-icons #youtube{
   padding: 5px 9px;
+  margin-right: 0;
 }
 /* Footer section end */
