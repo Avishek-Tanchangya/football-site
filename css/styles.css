@@ -13,19 +13,17 @@ a,
   color: white;
 }
 
-/* p{
-    display: inline;
-} */
-
 /* Header section */
 header {
+  position: relative;
+  height: 660px;
   background-color: #2d25a0;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 
 /* Navigation section */
@@ -50,6 +48,30 @@ nav {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+/* Hover effects */
+@keyframes banner-image-zoom-in-out {
+  from{
+    width: 50%;
+  }
+  to{
+    width: 60%;
+  }
+}
+
+@keyframes color-transfrom {
+  from{
+    color : #e02c6d;
+  }
+  to{
+    color: #ffffff;
+  }
+  
+}
+
+header:hover .banner-logo img{
+  animation: banner-image-zoom-in-out 1s ease-in-out 0.3s infinite alternate;
+  -webkit-animation: banner-image-zoom-in-out 1s ease-in-out 0.3s infinite alternate;
+}
 
 /* Banner Section */
 .banner {
@@ -72,11 +94,11 @@ nav {
 .banner-logo {
   width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   margin-right: 0;
 }
 .banner-logo img {
-  width: 90%;
+  width: 60%;
 }
 
 /* Main Section start */
@@ -179,3 +201,8 @@ footer .social-icons #youtube{
   margin-right: 0;
 }
 /* Footer section end */
+
+
+.watch-live i, .watch-now i{
+  animation: color-transfrom 1s ease-in-out 0.3s infinite alternate;
+}
