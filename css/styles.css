@@ -7,7 +7,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a{
+a,
+.fa-arrow-right {
   text-decoration: none;
   color: white;
 }
@@ -42,7 +43,7 @@ nav {
 
 .nav-right {
   background-color: #e02c6d;
-  padding: 10px 24px;
+  padding: 8px 24px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -51,68 +52,92 @@ nav {
 }
 
 /* Banner Section */
-
-.banner{
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-
+.banner {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
 }
-.banner-title h1{
-    font-size: 50px;
-    font-weight: bolder;
+.banner-title h1 {
+  font-size: 50px;
+  font-weight: bolder;
 }
-.banner-title .watch-live{
-    display: inline-block;
-    background-color: #e02c6d;
-    padding: 8px 24px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.banner-title .watch-live {
+  display: inline-block;
+  background-color: #e02c6d;
+  padding: 8px 24px;
+  border-radius: 5px;
 }
 
-.banner-logo{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin-right: 0;
+.banner-logo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
 }
-.banner-logo img{
-    width: 90%;
+.banner-logo img {
+  width: 90%;
 }
 
 /* Main Section start */
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
 /* Top players section start */
-.top-players{
-    
-    width: 950px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+.top-players {
+  width: 950px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
-.player{
-    padding: 15px;
-    box-shadow: 5px 5px 40px rgba(128, 128, 128, 0.274);
+.player {
+  padding: 15px;
+  box-shadow: 5px 5px 40px rgba(128, 128, 128, 0.274);
 }
-.player img{
-    width: 100%;
+.player img {
+  width: 100%;
 }
-.player h2{
+.player h2 {
   font-weight: bolder;
 }
-
-
-
 /* Top players section end */
+
+/* Highlights section start */
+.highlights {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 950px;
+  display: flex;
+  align-items: center;
+}
+
+.highlights-title h1{
+  font-size: 40px;
+  font-weight: bolder;
+}
+.highlights-title .watch-now {
+  display: inline-block;
+  background-color: #e02c6d;
+  padding: 8px 24px;
+  border-radius: 5px;
+}
+
+.highlights-logo {
+  /* width: 80%; */
+  display: flex;
+  justify-content: end;
+  margin-right: 0;
+}
+
+.highlights-logo img {
+  width: 80%;
+}
+
+/* Highlights section end */
+
 /* Main Section end */
