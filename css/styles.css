@@ -25,9 +25,8 @@
 -------------------------------------- */
 /*  */
 body {
-  /* background-color: red; */
   margin: 0;
-  
+  padding: 0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -206,7 +205,7 @@ main {
   border-radius: 5px;
 }
 
-.highlights-title{
+.highlights-title {
   width: 50%;
 }
 .highlights-logo {
@@ -272,12 +271,16 @@ footer .social-icons #youtube {
 /* ------ Media Query ------- */
 /* ------ Mobile Devices ------- */
 @media only screen and (max-width: 688px) {
-
+  /* -----common styles----- */
+  main,
+  .top-players,
+  footer {
+    width: 770px;
+  }
 
   header {
-    /* display: none; */
     padding: 40px 50px 90px 50px;
-    height: 700px;
+    height: 550px;
   }
 
   .nav-left a {
@@ -285,7 +288,7 @@ footer .social-icons #youtube {
     padding: 0;
   }
 
-  .banner-title,
+  .banner .banner-title,
   .banner-logo,
   .banner-logo img {
     margin: 0;
@@ -294,67 +297,81 @@ footer .social-icons #youtube {
 
   .banner {
     flex-direction: column;
-    margin: 20px 0 0 190px;
+    /* margin: 20px 0 0 190px; */
+    margin-top: 40px;
   }
 
   header,
   nav,
-  .banner,
-  .banner-title,
-  .banner-logo,
-  .top-players,
-  .highlights {
+  .banner {
     width: 100%;
   }
 
   .banner-title {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
 
+  .banner-title h1 {
+    font-size: 28px;
+  }
 
-  /* Main section */
-  main{
+  .banner-title,
+  .banner-logo {
+    /* padding-left: 170px; */
+  }
+
+  .banner-logo {
+    margin-top: 60px;
+    justify-content: center;
+  }
+
+  .banner-logo img {
+    margin: 0;
+    width: 60%;
+  }
+
+  /* ------ Main section -------- */
+  main {
+    background-color: burlywood;
     margin-right: 0;
   }
-  /* Top players */
-  .top-players{
-    grid-template-columns: repeat(1,1fr);
+  /* -----Top players------- */
+  .top-players {
+    grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 35px;
     grid-column-gap: 0;
-    margin-right: 0;
+    margin-top: 90px;
   }
 
-  .player{
-    margin-left: 150px;
+  .player {
+    margin: 0px 30px;
   }
-
 
   /* Highlights section*/
-  .highlights{
+  .highlights {
     flex-direction: column;
-    padding-left: 150px;
-    
   }
 
-  .highlights-title{
-    margin-bottom: 50px;
+  .highlights-title {
+    width: 90%;
+    margin: 20px 0px 50px 0px;
   }
 
-  .highlights-logo{
+  .highlights-logo {
+    width: 90%;
+    margin: 0px 0px 50px 0px;
     justify-content: start;
   }
-  .highlights-logo img{
+  .highlights-logo img {
     width: 100%;
   }
-
 
   /* Footer */
-  footer{
-    margin-left: 150px;
+  footer {
+    width: 770px;
+    margin: 0;
   }
-  footer img{
-    width: 100%;
+  footer img {
+    width: 60%;
   }
-
-  
 }
