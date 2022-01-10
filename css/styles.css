@@ -266,9 +266,6 @@ footer .social-icons #youtube {
 /* ------ Media Query ------- */
 /* ------ Mobile Devices ------- */
 @media only screen and (max-width: 688px) {
-  footer{
-    display: none;
-  }
 
   header {
     padding: 40px 50px 90px 50px;
@@ -297,7 +294,8 @@ footer .social-icons #youtube {
   .banner,
   .banner-title,
   .banner-logo,
-  .top-players {
+  .top-players,
+  .highlights {
     width: 100%;
   }
 
@@ -313,5 +311,34 @@ footer .social-icons #youtube {
     grid-row-gap: 35px;
     padding-left: 100px;
   }
+
+
+  /* Highlights section*/
+  .highlights{
+    flex-direction: column;
+    padding-left: 100px;
+    
+  }
+
+  .highlights-title{
+    margin-bottom: 50px;
+  }
+
+  .highlights-logo{
+    justify-content: start;
+  }
+  .highlights-logo img{
+    width: 100%;
+  }
+
+
+  /* Footer */
+  footer{
+    margin-left: 100px;
+  }
+  footer img{
+    width: 80%;
+  }
+
   
 }
