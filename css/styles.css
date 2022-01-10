@@ -204,15 +204,19 @@ main {
   border-radius: 5px;
 }
 
+.highlights-title{
+  width: 50%;
+}
 .highlights-logo {
-  /* width: 80%; */
+  width: 40%;
   display: flex;
   justify-content: end;
+  margin-left: 100px;
   margin-right: 0;
 }
 
 .highlights-logo img {
-  width: 80%;
+  width: 115%;
 }
 /* ---------------------------------
   ------Highlights section end------
