@@ -1,13 +1,13 @@
-/* fonts */
+/* ---- Fonts ------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* Animations */
+/* ---- Animations ------ */
 @keyframes banner-image-zoom-in-out {
   from{
-    width: 50%;
+    width: 60%;
   }
   to{
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -21,7 +21,11 @@
   
 }
 
-/* common styles or attributes */
+
+/* -----------------------------------
+  ----Common styles or attributes-----
+-------------------------------------- */
+/*  */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -33,7 +37,15 @@ a,
   color: white;
 }
 
-/* Header section */
+.watch-live i, .watch-now i{
+  animation: color-transfrom 1s ease-in-out 0.3s infinite alternate;
+}
+
+
+
+/* --------------------------------
+  ------Header section start-------
+----------------------------------- */
 header {
   position: relative;
   height: 660px;
@@ -46,7 +58,9 @@ header {
   /* padding-bottom: 80px; */
 }
 
-/* Navigation section */
+/* ---------------------------------
+  -----Navigation Section start-----
+------------------------------------ */
 nav {
   font-size: 16px;
   width: 1000px;
@@ -68,13 +82,18 @@ nav {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+/* ---------------------------------
+  -----Navigation Section start-----
+------------------------------------ */
 
+/* -----------------------------
+  -----Banner Section start-----
+-------------------------------- */
 header:hover .banner-logo img{
   animation: banner-image-zoom-in-out 1s ease-in-out 0.3s infinite alternate;
   -webkit-animation: banner-image-zoom-in-out 1s ease-in-out 0.3s infinite alternate;
 }
 
-/* Banner Section */
 .banner {
   width: 1000px;
   display: flex;
@@ -95,14 +114,25 @@ header:hover .banner-logo img{
 .banner-logo {
   width: 80%;
   display: flex;
-  justify-content: end;
-  margin-right: 0;
+  margin-left: 100px;
 }
 .banner-logo img {
   width: 60%;
+  margin-left: 150px;
 }
+/* -----------------------------
+   -------Banner Section end--------
+-------------------------------- */
+/* -------------------------------
+  ------Header section end--------
+---------------------------------- */
 
-/* Main Section start */
+
+
+
+/* -----------------------------
+   ------Main Section start-----
+-------------------------------- */
 main {
   display: flex;
   flex-direction: column;
@@ -110,7 +140,9 @@ main {
   align-items: center;
   margin-top: 70px;
 }
-/* Top players section start */
+/* --------------------------------
+  ----Top players section start---- 
+ ----------------------------------*/
 .top-players {
   width: 950px;
   display: grid;
@@ -121,16 +153,27 @@ main {
 .player {
   padding: 15px;
   box-shadow: 5px 5px 40px rgba(128, 128, 128, 0.274);
+  overflow: hidden;
 }
+
 .player img {
   width: 100%;
 }
 .player h2 {
   font-weight: bolder;
 }
-/* Top players section end */
 
-/* Highlights section start */
+.player:hover img{
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+/* ------------------------------
+  -----Top players section end-----
+----------------------------------- */
+
+/* -----------------------------------
+  ------Highlights section start------
+-------------------------------------- */
 .highlights {
   margin-top: 150px;
   margin-bottom: 20px;
@@ -160,13 +203,18 @@ main {
 .highlights-logo img {
   width: 80%;
 }
+/* ---------------------------------
+  ------Highlights section end------
+------------------------------------ */
 
-/* Highlights section end */
+/* ----------------------------
+  ------Main section end-------
+------------------------------- */
 
-/* Main Section end */
 
-
-/* Footer section start */
+/* --------------------------------
+  ------Footer section start-------
+----------------------------------- */
 footer{
   margin-top: 150px;
   display: flex;
@@ -201,9 +249,8 @@ footer .social-icons #youtube{
   padding: 5px 9px;
   margin-right: 0;
 }
-/* Footer section end */
+/* ------------------------------
+  ------Footer section end-------
+--------------------------------- */
 
 
-.watch-live i, .watch-now i{
-  animation: color-transfrom 1s ease-in-out 0.3s infinite alternate;
-}
