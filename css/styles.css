@@ -274,6 +274,7 @@ footer .social-icons #youtube {
   /* -----common styles----- */
   main,
   .top-players,
+  .highlights,
   footer {
     width: 770px;
   }
@@ -331,10 +332,6 @@ footer .social-icons #youtube {
   }
 
   /* ------ Main section -------- */
-  main {
-    background-color: burlywood;
-    margin-right: 0;
-  }
   /* -----Top players------- */
   .top-players {
     grid-template-columns: repeat(1, 1fr);
@@ -368,7 +365,6 @@ footer .social-icons #youtube {
 
   /* Footer */
   footer {
-    width: 770px;
     margin: 0;
   }
   footer img {
