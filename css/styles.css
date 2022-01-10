@@ -267,7 +267,9 @@ footer .social-icons #youtube {
 /* ------ Mobile Devices ------- */
 @media only screen and (max-width: 688px) {
 
+
   header {
+    display: none;
     padding: 40px 50px 90px 50px;
     height: 700px;
   }
@@ -305,18 +307,26 @@ footer .social-icons #youtube {
 
 
   /* Main section */
+  main{
+    margin-right: 0;
+  }
   /* Top players */
   .top-players{
     grid-template-columns: repeat(1,1fr);
     grid-row-gap: 35px;
-    padding-left: 100px;
+    grid-column-gap: 0;
+    margin-right: 0;
+  }
+
+  .player{
+    margin-left: 150px;
   }
 
 
   /* Highlights section*/
   .highlights{
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 150px;
     
   }
 
@@ -334,10 +344,10 @@ footer .social-icons #youtube {
 
   /* Footer */
   footer{
-    margin-left: 100px;
+    margin-left: 150px;
   }
   footer img{
-    width: 80%;
+    width: 100%;
   }
 
   
