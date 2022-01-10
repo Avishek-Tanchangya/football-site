@@ -259,7 +259,7 @@ footer .social-icons #youtube{
 /* ------ Mobile Devices ------- */
 @media only screen and (max-width: 688px){
 
-  main, footer, nav{
+  main, footer, nav, .banner-logo img{
     display: none;
   }
 
