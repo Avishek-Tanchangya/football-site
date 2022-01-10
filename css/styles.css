@@ -3,24 +3,22 @@
 
 /* ---- Animations ------ */
 @keyframes banner-image-zoom-in-out {
-  from{
+  from {
     width: 60%;
   }
-  to{
+  to {
     width: 70%;
   }
 }
 
 @keyframes color-transfrom {
-  from{
-    color : #e02c6d;
+  from {
+    color: #e02c6d;
   }
-  to{
+  to {
     color: #ffffff;
   }
-  
 }
-
 
 /* -----------------------------------
   ----Common styles or attributes-----
@@ -37,11 +35,10 @@ a,
   color: white;
 }
 
-.watch-live i, .watch-now i{
+.watch-live i,
+.watch-now i {
   animation: color-transfrom 1s ease-in-out 0.3s infinite alternate;
 }
-
-
 
 /* --------------------------------
   ------Header section start-------
@@ -89,9 +86,10 @@ nav {
 /* -----------------------------
   -----Banner Section start-----
 -------------------------------- */
-header:hover .banner-logo img{
+header:hover .banner-logo img {
   animation: banner-image-zoom-in-out 1s ease-in-out 0.3s infinite alternate;
-  -webkit-animation: banner-image-zoom-in-out 1s ease-in-out 0.3s infinite alternate;
+  -webkit-animation: banner-image-zoom-in-out 1s ease-in-out 0.3s infinite
+    alternate;
 }
 
 .banner {
@@ -127,9 +125,6 @@ header:hover .banner-logo img{
   ------Header section end--------
 ---------------------------------- */
 
-
-
-
 /* -----------------------------
    ------Main Section start-----
 -------------------------------- */
@@ -163,7 +158,7 @@ main {
   font-weight: bolder;
 }
 
-.player:hover img{
+.player:hover img {
   transform: scale(1.1);
   transition: transform 1s ease-in-out;
 }
@@ -182,7 +177,7 @@ main {
   align-items: center;
 }
 
-.highlights-title h1{
+.highlights-title h1 {
   font-size: 40px;
   font-weight: bolder;
 }
@@ -211,41 +206,40 @@ main {
   ------Main section end-------
 ------------------------------- */
 
-
 /* --------------------------------
   ------Footer section start-------
 ----------------------------------- */
-footer{
+footer {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer img{
+footer img {
   width: 40%;
 }
 
-footer .social-icons div{
+footer .social-icons div {
   background-color: rgba(128, 128, 128, 0.205);
   display: inline-block;
   border-radius: 100%;
   margin-right: 10px;
 }
 
-.social-icons a{
+.social-icons a {
   color: gray;
 }
 
-footer .social-icons #instagram{
+footer .social-icons #instagram {
   padding: 5px 11px;
 }
-footer .social-icons #facebook{
+footer .social-icons #facebook {
   padding: 5px 13px;
 }
-footer .social-icons #twitter{
+footer .social-icons #twitter {
   padding: 5px 10px;
 }
-footer .social-icons #youtube{
+footer .social-icons #youtube {
   padding: 5px 9px;
   margin-right: 0;
 }
@@ -253,28 +247,35 @@ footer .social-icons #youtube{
   ------Footer section end-------
 --------------------------------- */
 
-
-
 /* ------ Media Query ------- */
 /* ------ Mobile Devices ------- */
-@media only screen and (max-width: 688px){
-
-  main, footer, nav, .banner-logo img{
+@media only screen and (max-width: 688px) {
+  main,
+  footer,
+  nav {
     display: none;
   }
 
-  header{
+  header {
     background-color: red;
     width: 100%;
   }
 
-  .banner{
+  .banner {
+    width: 100%;
     flex-direction: column;
+    align-items: center;
   }
 
+  .banner-title,
+  .banner-logo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
+  .banner-title {
+    padding-left: 150px;
+    margin-bottom: 30px;
+  }
 }
-
-
-
-
