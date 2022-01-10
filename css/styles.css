@@ -25,7 +25,9 @@
 -------------------------------------- */
 /*  */
 body {
+  background-color: red;
   margin: 0;
+  
   font-family: "Poppins", sans-serif;
 }
 
@@ -273,7 +275,7 @@ footer .social-icons #youtube {
 
 
   header {
-    display: none;
+    /* display: none; */
     padding: 40px 50px 90px 50px;
     height: 700px;
   }
