@@ -66,14 +66,30 @@ nav {
   align-items: center;
 }
 
-.nav-left a {
+nav {
+  align-items: baseline;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+}
+.menu:hover .dropdown {
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
+.nav-left .laptop a {
   margin-right: 20px;
   padding: 5px 8px;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 
 .nav-right {
@@ -86,7 +102,7 @@ nav {
   -o-border-radius: 5px;
 }
 
-.nav-left a:hover {
+.nav-left .laptop a:hover {
   background-color: salmon;
 }
 /* ---------------------------------
@@ -268,8 +284,6 @@ footer .social-icons #youtube {
   ------Footer section end-------
 --------------------------------- */
 
-
-
 /* ------------------------- 
    ------Media Query -------
 ---------------------------- */
@@ -284,13 +298,35 @@ footer .social-icons #youtube {
     width: 100%;
   }
 
+
+  /* -------- Header section ------- */
   header {
-    /* padding: 40px 50px 90px 50px; */
     height: 550px;
   }
 
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-left{
+    margin-left: 60px;
+  }
+  .nav-right{
+    margin-right: 60px;
+  }
+  .mobile{
+    display: block;
+  }
+  .laptop{
+    display: none;
+  }
+
+  .dropdown{
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+  }
   .nav-left a {
-    margin-right: 10px;
+    margin: 0;
     padding: 0;
   }
 
@@ -303,7 +339,6 @@ footer .social-icons #youtube {
 
   .banner {
     flex-direction: column;
-    /* margin: 20px 0 0 190px; */
     margin-top: 40px;
   }
 
@@ -313,17 +348,8 @@ footer .social-icons #youtube {
     width: 100%;
   }
 
-  .banner-title {
-    /* margin-bottom: 60px; */
-  }
-
   .banner-title h1 {
     font-size: 28px;
-  }
-
-  .banner-title,
-  .banner-logo {
-    /* padding-left: 170px; */
   }
 
   .banner-logo {
@@ -349,18 +375,22 @@ footer .social-icons #youtube {
     margin: 0px 30px;
   }
 
-  /* Highlights section*/
+  /* --------- Highlights section--------*/
   .highlights {
     flex-direction: column;
   }
 
   .highlights-title {
-    width: 90%;
+    width: 80%;
     margin: 20px 0px 50px 0px;
   }
 
+  .highlights-title h1 {
+    font-size: 30px;
+  }
+
   .highlights-logo {
-    width: 90%;
+    width: 80%;
     margin: 0px 0px 50px 0px;
     justify-content: start;
   }
@@ -368,7 +398,7 @@ footer .social-icons #youtube {
     width: 100%;
   }
 
-  /* Footer */
+  /* ------- Footer --------- */
   footer {
     margin: 0;
   }
