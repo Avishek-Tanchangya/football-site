@@ -268,19 +268,24 @@ footer .social-icons #youtube {
   ------Footer section end-------
 --------------------------------- */
 
-/* ------ Media Query ------- */
+
+
+/* ------------------------- 
+   ------Media Query -------
+---------------------------- */
 /* ------ Mobile Devices ------- */
 @media only screen and (max-width: 688px) {
   /* -----common styles----- */
+  header,
   main,
   .top-players,
   .highlights,
   footer {
-    width: 770px;
+    width: 100%;
   }
 
   header {
-    padding: 40px 50px 90px 50px;
+    /* padding: 40px 50px 90px 50px; */
     height: 550px;
   }
 
